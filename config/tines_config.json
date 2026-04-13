@@ -1,0 +1,148 @@
+{
+  "schema_version": 28,
+  "standard_lib_version": 90,
+  "action_runtime_version": 73,
+  "name": "Your first story",
+  "description": "",
+  "guid": "eb8bb8b5eca345ffcf23ea0641b6bd9b",
+  "slug": "your_first_story",
+  "agents": [
+    {
+      "type": "Agents::WebhookAgent",
+      "name": "Webhook Action",
+      "disabled": false,
+      "description": null,
+      "guid": "2f1e2602dd45c2470207d8182176e923",
+      "origin_story_identifier": "cloud:0fe8b199e0cc3015198fe3939b2cf580:eb8bb8b5eca345ffcf23ea0641b6bd9b",
+      "options": {
+        "path": "4a4d61d38391b7999da5316416863edf",
+        "secret": "7723405328448146ef8a233073fe6d27",
+        "verbs": "get,post"
+      },
+      "reporting": {
+        "time_saved_value": 0,
+        "time_saved_unit": "minutes"
+      },
+      "monitoring": {
+        "monitor_all_events": false,
+        "monitor_failures": false,
+        "monitor_no_events_emitted": null
+      },
+      "template": {
+        "created_from_template_guid": null,
+        "created_from_template_version": null,
+        "template_tags": []
+      },
+      "width": null
+    },
+    {
+      "type": "Agents::EventTransformationAgent",
+      "name": "Event Transform Action",
+      "disabled": false,
+      "description": null,
+      "guid": "ce7bb4c78450b08da30eeff3caecd640",
+      "origin_story_identifier": "cloud:0fe8b199e0cc3015198fe3939b2cf580:eb8bb8b5eca345ffcf23ea0641b6bd9b",
+      "options": {
+        "mode": "message_only",
+        "loop": false,
+        "payload": {
+          "message": "This is an automatically generated message from Tines"
+        }
+      },
+      "reporting": {
+        "time_saved_value": 0,
+        "time_saved_unit": "minutes"
+      },
+      "monitoring": {
+        "monitor_all_events": false,
+        "monitor_failures": false,
+        "monitor_no_events_emitted": null
+      },
+      "template": {
+        "created_from_template_guid": null,
+        "created_from_template_version": null,
+        "template_tags": []
+      },
+      "width": null,
+      "schedule": null
+    },
+    {
+      "type": "Agents::EmailAgent",
+      "name": "Send Email Action",
+      "disabled": false,
+      "description": null,
+      "guid": "88a55231ad71f093fddcf24b9d3df4cc",
+      "origin_story_identifier": "cloud:0fe8b199e0cc3015198fe3939b2cf580:eb8bb8b5eca345ffcf23ea0641b6bd9b",
+      "options": {
+        "recipients": [],
+        "reply_to": "",
+        "sender_name": "Jasdev Singh",
+        "subject": "🚨 [SOC ALERT] AI-Analyzed PowerShell Execution on <<webhook_action.body.message>>",
+        "body": "Time: <<event_transform_action.execution_time>>\nHost: <<event_transform_action.computer>>\nUser: <<event_transform_action.user>>\nDecoded Command:: <<event_transform_action.decoded_command\n>>\n",
+        "advanced_html": true,
+        "cc": [],
+        "bcc": [],
+        "sender_address": ""
+      },
+      "reporting": {
+        "time_saved_value": 0,
+        "time_saved_unit": "minutes"
+      },
+      "monitoring": {
+        "monitor_all_events": false,
+        "monitor_failures": false,
+        "monitor_no_events_emitted": null
+      },
+      "template": {
+        "created_from_template_guid": null,
+        "created_from_template_version": null,
+        "template_tags": []
+      },
+      "width": null,
+      "schedule": null
+    }
+  ],
+  "diagram_notes": [],
+  "links": [
+    {
+      "source": 0,
+      "receiver": 1
+    },
+    {
+      "source": 1,
+      "receiver": 2
+    }
+  ],
+  "diagram_layout": "{\"2f1e2602dd45c2470207d8182176e923\":[945,75],\"88a55231ad71f093fddcf24b9d3df4cc\":[945,255],\"ce7bb4c78450b08da30eeff3caecd640\":[945,165]}",
+  "story_library_metadata": {},
+  "monitor_failures": false,
+  "synchronous_webhooks_enabled": false,
+  "integrations": [],
+  "sections": [],
+  "parent_only_send_to_story": false,
+  "send_to_story_timeout_enabled": false,
+  "send_to_story_timeout_duration_seconds": null,
+  "keep_events_for": 86400,
+  "reporting_status": true,
+  "send_to_story_enabled": false,
+  "entry_agent_guid": null,
+  "exit_agent_guids": [],
+  "api_entry_action_guids": [],
+  "api_exit_action_guids": [],
+  "send_to_story_access": null,
+  "send_to_story_access_source": 0,
+  "send_to_story_skill_use_requires_confirmation": true,
+  "pages": [],
+  "tags": [],
+  "time_saved_unit": "minutes",
+  "time_saved_value": 0,
+  "origin_story_identifier": "cloud:0fe8b199e0cc3015198fe3939b2cf580:eb8bb8b5eca345ffcf23ea0641b6bd9b",
+  "recipients": [],
+  "integration_product": null,
+  "integration_vendor": null,
+  "llm_product_instructions": "",
+  "start_reference": null,
+  "send_to_stories": [],
+  "exported_at": "2026-04-13T17:01:01Z",
+  "icon": ":simple_weather_api:"
+}
