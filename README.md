@@ -40,5 +40,18 @@ Unlike legacy automation that relies on static scripts, this project utilizes **
 5.  **Response:** A comprehensive SOC report is emailed to the analyst, providing the "True Intent" of the execution.
 
 ---
+## 📊 Proof of Concept
+
+### 1. Elastic SIEM Logs
+![Elastic Logs](images/ELK_SIEM_logs.png)
+*Figure 1: Analyzing Sysmon Events for PowerShell Obfuscation.*
+
+### 2. Tines AI Workflow
+![Tines Storyboard](images/tines_storyboard.png)
+*Figure 2: The automated flow logic using AI-powered transformation nodes.*
+
+### 3. Final Decoded Alert Email
+![Email Result](images/email_alert.png)
+*Figure 3: The automated incident report with the decoded command and analysis.*
 
 
