@@ -54,4 +54,9 @@ Unlike legacy automation that relies on static scripts, this project utilizes **
 ![Email Result](images/email_alert.png)
 *Figure 3: The automated incident report with the decoded command and analysis.*
 
+---
+
+## 📂 Repository Contents
+* `/config`: Contains the **Elastic Rule (NDJSON)** and **Tines Storyboard (JSON)** exports.
+* `/images`: Screenshots of the lab in action.
 
