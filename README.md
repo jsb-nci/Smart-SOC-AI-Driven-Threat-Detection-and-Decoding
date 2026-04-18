@@ -51,7 +51,7 @@ Unlike legacy automation that relies on static scripts, this project utilizes **
 *Figure 2: The automated flow logic using AI-powered transformation nodes.*
 
 ### 3. Final Decoded Alert Email
-![Email Result](images/email_alert.png)
+![Email Result](images/email_alert_final.png)
 *Figure 3: The automated incident report with the decoded command and analysis.*
 
 ---
